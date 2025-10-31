@@ -870,8 +870,8 @@ def opt_mintime(reftrack: np.ndarray,
     # solver options
     opts = {"expand": True,
             "verbose": print_debug,
-            "ipopt.max_iter": 2000,
-            "ipopt.tol": 1e-7}
+            "ipopt.max_iter": 5000,
+            "ipopt.tol": 1e-3}
 
     # solver options for warm start
     if pars["optim_opts"]["warm_start"]:
